@@ -46,7 +46,6 @@ header {
     a{
       display: block;
       padding: 1em 1em;
-      margin-top: 0.2em;
       text-align: center;
       border-bottom: 1px solid $light-grey;
       text-decoration: none;
@@ -54,7 +53,18 @@ header {
       letter-spacing: 2px;
       font-size: 2.5em;
       font-weight: 900;
+      color: #008aff;
     }
+      
+    &:hover {
+    background: #008aff;
+    transition: background 0.3s ease-in-out;
+      a{
+        color: #fff;
+        transition: background 0.6s ease-in-out;
+      }
+    }
+      
     &:first-child a{
       border-top: 1px solid $light-grey;
     }
