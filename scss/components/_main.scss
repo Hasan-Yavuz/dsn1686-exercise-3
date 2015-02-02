@@ -20,6 +20,7 @@ html {
 
 body{
   font-family: sans-serif;
+  background: $background-color;
   @include zero;
   // Hides close button if there is no js
   &.noscript{
@@ -27,6 +28,14 @@ body{
       display: none;
     }
   }
+}
+
+h1 {
+  color: $text-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 header {
@@ -47,26 +56,28 @@ header {
       display: block;
       padding: 1em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-grey;
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
       font-size: 2.5em;
-      font-weight: 900;
-      color: #008aff;
+      font-weight: 300;
+      color: $text-color;
+      background: $background-color;
     }
       
     &:hover {
-    background: #008aff;
+    background: $text-color;
     transition: background 0.3s ease-in-out;
       a{
-        color: #fff;
-        transition: background 0.6s ease-in-out;
+        color: $text-color-hover;
+        background: $background-color-hover;
+        transition: background 0.3s ease-in-out;
+        font-weight: 700;
+        letter-spacing: 10px;
       }
     }
       
     &:first-child a{
-      border-top: 1px solid $light-grey;
     }
   } // li
 } // .navigation ul
@@ -77,9 +88,9 @@ header {
   height: 40px;
   width: 40px;
   i{
-    border: 1px solid $light-grey;
     padding: .5em;
     padding-top: 0.7em;
+    background: $background-color;
   }
   span{
     @include hide-text;
@@ -145,3 +156,4 @@ body.noscript .slide-menu {
   position: static;
   right: auto;
 }
+
