@@ -133,7 +133,16 @@ z-index: 100;
 }
     
 @media only screen and (min-width: 60em) {
-    
+  .toggle-btn, 
+  .close-btn{
+    height: 40px;
+    width: 40px;
+    i{
+      margin-right: 2em;
+      background: $background-color;
+      font-size: 1.6em;
+    }
+  }
 }
 
   // Nav styles
